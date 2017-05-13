@@ -1,6 +1,6 @@
 all: serial
 
-CMAKE_FLAGS := -DCMAKE_INSTALL_PREFIX=/tmp/usr/local
+CMAKE_FLAGS := -DCMAKE_INSTALL_PREFIX=/tmp/usr/local -DCMAKE_TOOLCHAIN_FILE=../../Toolchain-Beaglebone.cmake
 UNAME := $(shell uname -s)
 
 install_deps:
